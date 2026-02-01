@@ -1,0 +1,54 @@
+/* src/components/Services.css */
+.services-section {
+  margin-top: 24px;
+}
+
+.services-subtitle {
+  color: rgb(204, 214, 246);
+  max-width: 720px;
+  margin: 10px auto 0;
+}
+
+.services-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.service-card {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 18px;
+  background: rgba(46, 46, 67, 0.6);
+}
+
+.service-card__title {
+  color: rgb(208, 216, 250);
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.service-card__subtitle {
+  margin: 6px 0 0;
+  color: rgb(204, 214, 246);
+}
+
+.service-card__list {
+  margin-top: 14px;
+  color: rgb(204, 214, 246);
+  font-size: 0.96rem;
+}
+
+.service-card__meta {
+  margin-top: 14px;
+  color: rgb(210, 4, 45);
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

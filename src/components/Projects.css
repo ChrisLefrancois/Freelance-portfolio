@@ -1,0 +1,113 @@
+.projects {
+  background-color: rgb(46, 46, 67);
+  border-radius: 48px;
+  padding: 52px;
+}
+
+/* wrapper holds spacing */
+.project-wrap {
+  margin-top: 24px;
+}
+
+/* animated card */
+.project {
+  display: flex;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid #eee;
+
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+}
+
+/* even cards start from left ONLY before reveal */
+.project-wrap:nth-of-type(even) .project:not(.show) {
+  transform: translateX(-400%);
+}
+
+/* revealed cards */
+.project.show {
+  transform: translateX(0);
+}
+
+.project:hover {
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.project .image-container {
+  flex: 0 0 400px;
+  height: auto;
+}
+
+.project .image-container img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px solid #ddd;
+}
+
+.project .description-container {
+  margin-left: 24px;
+}
+
+.project .description-container h3 {
+  color: rgb(208, 216, 250);
+  letter-spacing: 1px;
+}
+
+.project .description-container h4 {
+  color: rgb(208, 216, 250);
+  letter-spacing: 1px;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.project .description-container h4 span {
+  color: rgb(210, 4, 45);
+}
+
+.project .description-container ul {
+  color: #ccd6f6;
+  font-size: 0.94rem;
+  margin-top: 20px;
+}
+
+.project .description-container .links {
+  margin-top: 48px;
+}
+
+.project .description-container .links a {
+  font-size: 1.2rem;
+  margin-right: 24px;
+  color: rgb(210, 4, 45);
+  display: inline-block;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  .projects {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .project {
+    display: block;
+    padding: 0;
+    transform: translateX(0);
+  }
+
+  .project .image-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .project .description-container {
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .project .image-container img {
+    border-radius: 16px;
+  }
+}

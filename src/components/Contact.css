@@ -1,0 +1,129 @@
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .contacts a {
+    color: rgb(208, 216, 250);
+    text-decoration: underline;
+  }
+
+  .contacts h5 {
+    color: rgb(208, 216, 250);
+  }
+
+  .contacts .get-in-touch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mail-size {
+    color: rgb(208, 216, 250);
+    font-size: 50px;
+  }
+
+  .contacts .contact-box {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+  }
+
+  .contacts .contact-box i {
+    padding: 12px;
+    margin-bottom: 18px;
+  }
+
+  .button-submit {
+    border-radius: 36px;
+    padding: 16px 40px;
+    color: rgb(30, 30, 47);
+    background-color: rgb(208, 216, 250);
+  }
+
+  form label {
+    color: rgb(208, 216, 250);
+  }
+
+  .social-network i {
+    font-size: 30px;
+  }
+
+  .social-network i:hover {
+    transition: all 0.3s ease-in-out;
+    transform: translate3d(0, -4px, 0);
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    .contacts {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  /* Right side: center the whole form block */
+.contact-form-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form width */
+.simple_form.contact {
+  width: 100%;
+  max-width: 560px;
+  margin-top: 16px;
+}
+
+/* Name + Email row */
+.simple_form.contact .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Inputs */
+.simple_form.contact input,
+.simple_form.contact textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Real message box */
+.simple_form.contact textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Button under message, aligned right */
+.simple_form.contact .button-submit {
+  margin-top: 16px;
+  margin-left: auto;
+  display: block;
+
+  height: auto;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .simple_form.contact .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.simple_form.contact .button-submit {
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto; /* 👈 add this */
+  display: block;
+}

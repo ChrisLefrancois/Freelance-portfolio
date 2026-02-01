@@ -1,0 +1,26 @@
+:root {
+  --navy: rgb(30, 30, 47);;        /* adjust to your exact color */
+  --light-gray: rgb(200,200,200);  /* adjust to match Le Wagon */
+}
+
+body {
+  background-color: $navy;
+}
+
+h2 {
+  color: rgb(210, 4, 45);;
+}
+
+@media only screen and (max-width: 767px) {
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .banner p {
+    text-align: center;
+  }
+}

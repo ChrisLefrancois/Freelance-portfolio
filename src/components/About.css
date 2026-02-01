@@ -1,0 +1,42 @@
+.info-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 40px;
+  text-align: end;
+}
+
+.icon-size {
+  font-size: 75px;
+  color: #ccd6f6
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rails-icon {
+  width: 75px;
+  height: 75px;
+  fill: #E6EBFF;
+  stroke: #E6EBFF;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .info-card {
+    display: block;
+  }
+
+  .card-text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

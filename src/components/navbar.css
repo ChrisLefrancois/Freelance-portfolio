@@ -1,0 +1,49 @@
+.navbar-lewagon {
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-lewagon .nav-link {
+  color: #E6EBFF;
+  text-decoration: none;
+}
+
+.navbar-lewagon .nav-link:hover {
+  color: #FF4D4D;
+}
+
+/* mobile toggle */
+.navbar-toggler {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #E6EBFF;
+  cursor: pointer;
+}
+
+/* collapse behavior */
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-collapse.show {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: block;
+  }
+}
